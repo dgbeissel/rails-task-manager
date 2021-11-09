@@ -1,0 +1,12 @@
+<h1><%= @tasks.title %></h1>
+<p><%= @tasks.details %></p>
+<p>Done? <%= @tasks.completed %></p>
+
+<ul>
+<li><%= link_to "Edit", edit_restaurant_path(@tasks) %></li>
+<li><%= link_to "Create", restaurant_create_path %></li>
+<li><%= link_to "Delete", delete_task_path, method: :delete %></li>
+<li><%= link_to "Back", tasks_path %></li>
+</ul>
+
+
